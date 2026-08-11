@@ -1,0 +1,123 @@
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 88px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--concrete);
+}
+
+.cart-item__image {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--paper-dim);
+}
+
+.cart-item__name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cart-item__price {
+  font-family: var(--font-mono);
+  color: var(--line);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.cart-item__qty {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+}
+
+.cart-item__qty-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  width: 20px;
+}
+
+.cart-item__end {
+  text-align: right;
+}
+
+.cart-item__line-total {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cart-item__remove {
+  background: none;
+  border: none;
+  color: var(--stamp-red);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.cart-summary {
+  position: sticky;
+  top: 96px;
+  background: #fff;
+  border: 1px solid var(--paper-dim);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cart-summary__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--line);
+}
+
+.cart-summary__row--total {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  border-top: 1px dashed var(--concrete);
+  padding-top: 12px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.empty-cart h2 {
+  margin-bottom: 12px;
+}
+
+.empty-cart p {
+  color: var(--line);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 860px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    position: static;
+  }
+}
