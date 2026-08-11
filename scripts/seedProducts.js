@@ -65,7 +65,7 @@ const products = [
     price: 619.99,
     category: "Hoodies",
     description: "Premium heavyweight oversized streetwear hoodie with dropped sleeves.",
-    imageURL: "https://images.unsplash.com/photo-1542406775-eddf50c3a2d3?w=800&q=80",
+    imageURL: "https://images.unsplash.com/photo-1572857422502-5e538918a8bf?w=800&q=80",
     stock: 20,
     featured: true,
     rating: 4.8,
